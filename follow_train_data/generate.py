@@ -113,9 +113,8 @@ def get_thm_train_data(thm, arg_map={}):
         tails.append("-| " + condition)
 
     if len(new_diffs) > 0:
-        tails.append("diff")
         for dv in new_diffs:
-            tails.append(f"( {dv[0]} , {dv[1]} )")
+            tails.append(f"diff ( {dv[0]} , {dv[1]} )")
 
     states = thm["states"]
     actions = thm["actions"]
