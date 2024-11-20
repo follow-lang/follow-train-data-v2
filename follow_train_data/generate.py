@@ -402,5 +402,5 @@ if __name__ == "__main__":
     if max_thm_number < 0:
         max_thm_number = thms.index("ex-natded5.2") 
     
-    run(min_thm_number, max_thm_number, depth=max_depth, batch_size=n_futures)
+    run(min_thm_number, max_thm_number, depth=0, batch_size=n_futures)
 
